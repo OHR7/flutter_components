@@ -14,7 +14,6 @@ class _MenuProvider {
     final res = await rootBundle.loadString('data/menu_opts.json');
     
     Map dataMap = json.decode(res);
-    print(dataMap['rutas']);
     options = dataMap['rutas'];
 
     return options;
